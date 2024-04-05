@@ -1,0 +1,117 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#container {
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #333;
+    margin: 0.5em 0;
+}
+
+textarea, button {
+    padding: 10px;
+    margin: 0.5em 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: calc(100% - 20px); /* Subtract padding from width */
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+}
+
+button {
+    color: white;
+    cursor: pointer;
+    background-color: #5cb85c; /* Green */
+}
+
+button#incorrect {
+    background-color: #d9534f; /* Red */
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+#gameArea {
+    margin: 1em 0;
+}
+
+#wordDisplay {
+    font-size: 2.5em;
+    margin: 0.5em 0;
+    height: 80px;
+    line-height: 80px;
+    word-break: break-all; /* Ensure long words don't overflow */
+}
+
+#results {
+    display: none; /* Hide results initially */
+    margin-top: 20px;
+}
+
+#finalScore {
+    margin-top: 1em;
+}
+
+.resultsTitle {
+    font-weight: bold;
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 0.2em;
+}
+
+.resultsList {
+    display: inline-block;
+    width: 48%;
+    text-align: left;
+    vertical-align: top; /* Align the tops of the two columns */
+    list-style: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.resultsList li {
+    margin: 0.1em 0; /* Small margin between list items */
+}
+
+@media (max-width: 768px) {
+    button, textarea {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .resultsTitle, .resultsList {
+        width: 100%; /* Stack the columns on smaller screens */
+        margin-bottom: 1em;
+    }
+}
+
+#resultsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#resultsTable th,
+#resultsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#resultsTable th {
+  background-color: #f2f2f2;
