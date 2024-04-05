@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sight Word Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Sight Word Practice</h1>
+        <textarea id="wordInput" placeholder="Enter words separated by a new line"></textarea>
+        <button id="startGame">Start Game</button>
+        
+        <div id="gameArea" style="display: none;">
+            <div id="wordDisplay"></div>
+            <button id="correct" class="answerButton">✓ Correct</button>
+            <button id="incorrect" class="answerButton">✗ Incorrect</button>
+        </div>
+        
+        <div id="results" style="display: none;">
+            <h2>Final Results</h2>
+            <p id="score"></p>
+            <table id="resultsTable">
+                <tr>
+                    <th>Correct</th>
+                    <th>Incorrect</th>
+                </tr>
+                <!-- JavaScript will populate this section with results -->
+            </table>
+            <button id="playAgain">Play Again</button>
+            <button id="newGame">New Game</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
