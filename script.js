@@ -106,4 +106,34 @@ document.addEventListener('DOMContentLoaded', function() {
       gameArea.style.display = 'none';
       results.style.display = 'block';
   }
+ 
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Show the welcome modal when the page loads
+  var modal = document.getElementById('welcomeModal');
+  var closeButton = document.getElementsByClassName('close-button')[0];
+  var startButton = document.getElementById('startButton');
+
+  modal.style.display = 'block';
+
+  // When the user clicks on (x), close the modal
+  closeButton.onclick = function() {
+    modal.style.display = 'none';
+  };
+
+  // When the user clicks on "Get Started", close the modal
+  // and show the main content (you might need to adjust this
+  // if you already have a start button for the game)
+  startButton.onclick = function() {
+    modal.style.display = 'none';
+  };
+
+  // If the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target === modal) {
+      modal.style.display = 'none';
+    }
+  };
+});
+
