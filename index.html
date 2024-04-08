@@ -6,6 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">×</span>
+      <h2>Welcome to Sight Word Practice Test!</h2>
+      <p>This test will help you practice sight words with your child or student. Here's how to get started:</p>
+      <ul>
+        <li>Type the words you want to practice, one per line, in the text area.</li>
+        <li>Click "Start Game" to begin the test.</li>
+        <li>You will have 7 seconds to say each word.</li>
+        <li>If the word is said correctly, click the green checkmark. If not, click the red X or wait for the next word.</li>
+        <li>At the end of the game, you'll see your score and can play again or start a new game!</li>
+      </ul>
+      <button id="startButton" class="start-btn">Get Started</button>
+    </div>
+  </div>
+  
     <div id="container">
         <h1>Sight Word Practice</h1>
         <textarea id="wordInput" placeholder="Enter words separated by a new line"></textarea>
@@ -35,3 +52,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
